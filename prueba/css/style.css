@@ -1,0 +1,88 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.caja1 {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  background: orange;
+  -webkit-animation: anim1 1s forwards;
+          animation: anim1 1s forwards;
+}
+
+.caja2 {
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  background-color: green;
+  background-image: url("./../img/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: anim2 1s forwards;
+          animation: anim2 1s forwards;
+}
+
+@-webkit-keyframes anim1 {
+  0% {
+    width: 20%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes anim1 {
+  0% {
+    width: 20%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes anim2 {
+  0% {
+    width: 80%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    width: 80%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

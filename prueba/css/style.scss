@@ -1,0 +1,33 @@
+body, html { padding:0px; margin:0px; width:100%; height:100%; }
+.container {
+    width:100%; height:100%;
+    display:flex;
+    flex-direction: row;
+}
+.caja1 {
+    width:20%;
+    height:100%;
+    display:inline-block;
+    background:orange;
+    animation: anim1 1s forwards;
+}
+.caja2 {
+    width:80%;
+    height:100%;
+    display:inline-block;
+    background-color:green;
+    background-image:url('./../img/back.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    animation: anim2 1s forwards;
+}
+@keyframes anim1 {
+    0%{width:20%;}
+    50%{width:0%;}
+    100%{width:20%;}
+}
+@keyframes anim2 {
+    0%{width:80%;}
+    50%{width:100%;}
+    100%{width:80%;}
+}

@@ -1,0 +1,265 @@
+/*
+====         =========    =========
+====         =========    =========
+====         ===          ===   ===
+====         =========    ===   ===
+====         =========    ===   ===
+====         ===          ===   ===
+==========   =========    =========
+==========   =========    =========
+
+Prueba Wunderman 2020
+*/
+/* BASE */
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: arial;
+}
+
+/* HEADER */
+#header {
+  padding: 10px 30px;
+  background-color: #000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header div {
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header i {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+/* SLIDER */
+.slideshow, .slide {
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.slide1 {
+  background: red;
+}
+
+.slide2 {
+  background: green;
+}
+
+.slide3 {
+  background: orange;
+}
+
+.slick-prev, .slick-next {
+  position: absolute !important;
+  z-index: 1;
+  scale: 2 !important;
+}
+
+.slick-prev {
+  left: 30px !important;
+}
+
+.slick-next {
+  right: 30px !important;
+}
+
+.infoSlider {
+  position: absolute;
+  margin-left: 13vw;
+  z-index: 2222;
+  text-align: center;
+  z-index: 2222;
+}
+
+.infoSlider h1 {
+  font-size: 5vw;
+  margin-bottom: 0px;
+}
+
+.infoSlider h1 span {
+  font-size: 12vw;
+}
+
+.infoSlider button {
+  border: none;
+  background: #1fa2ac;
+  color: white;
+  width: 100%;
+  padding: 30px 10px;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+.infoSlider button:hover {
+  border: none;
+  background: #228c94;
+}
+
+.infoSlider button:active {
+  background: #1d7177;
+}
+
+/* CONTENIDO */
+#contenido {
+  padding: 5px 20px;
+  position: relative;
+  bottom: 100px;
+  margin-bottom: -80px;
+}
+
+#contenido > p {
+  font-size: 3vw;
+  font-weight: lighter;
+  position: relative;
+  left: 15px;
+}
+
+.tarjeta {
+  width: 22%;
+  height: 450px;
+  margin: 10px 1vw;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: inline-block;
+  -webkit-box-shadow: 2px 2px 5px #bbb;
+          box-shadow: 2px 2px 5px #bbb;
+  overflow: hidden;
+}
+
+.tarjeta div {
+  padding: 10px 20px !important;
+}
+
+.tarjeta div:first-child {
+  height: 200px;
+  background-color: #999;
+  padding: 0px !important;
+}
+
+.tarjetaPar {
+  position: relative;
+  top: 25px;
+}
+
+/* FORMULARIO */
+#formulario {
+  margin: 80px 0px;
+}
+
+#formulario > p {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#formulario hr {
+  border: 0.2px solid #999 !important;
+}
+
+#formulario form {
+  margin-top: 30px !important;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#formulario form > div {
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0px;
+}
+
+#formulario input {
+  width: 90%;
+  border: none;
+  font-size: 1rem;
+  color: #555;
+}
+
+#formulario .cajaInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#formulario .input {
+  padding: 15px 15px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: 49%;
+}
+
+#formulario select {
+  border: none;
+  width: 100%;
+}
+
+#formulario small {
+  color: red;
+}
+
+select::-ms-expand {
+  display: none !important;
+}
+
+#localidades::before {
+  content: 'holaMundo';
+  border: none !important;
+  background: green;
+}
+
+#acepto {
+  scale: 1.2;
+}
+
+#btnSubmit {
+  border: none;
+  background: #1fa2ac;
+  color: white !important;
+  width: 200px !important;
+  padding: 15px 10px;
+  margin: 0 auto !important;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  letter-spacing: 8px;
+}
+/*# sourceMappingURL=style.css.map */

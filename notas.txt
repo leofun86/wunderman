@@ -1,0 +1,5 @@
+GULP
+npm install -g gulp		GLOBAL
+npm init -y			INSTALACIÓN DE PACKAGE.JSON
+npm install --save-dev gulp	INSTALACIÓN DE GULP EN PROYECTO EN MODO DESARROLLO
+
