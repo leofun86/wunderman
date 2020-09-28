@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!--
+    ====         =========     =======          ========    ===   ===    ===    ===    =========    =========
+    ====         =========    =========         ========    ===   ===    =====  ===    =========    =========
+    ====         ===          ===   ===         ===         ===   ===    ==========    ===          ===
+    ====         =========    ===   ===         ========    ===   ===    ===  =====    =========    =========
+    ====         =========    ===   ===         ========    ===   ===    ===    ===    =========    =========
+    ====         ===          ===   ===         ===         ===   ===    ===    ===    ===                ===
+    ==========   =========    =========         ===         =========    ===    ===    =========    =========
+    ==========   =========     =======     =    ===         =========    ===    ===    =========    =========
+
+    Prueba Wunderman 2020
+-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +21,8 @@
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- JS -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/datos.js"></script>
     <!-- SLICK -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -21,7 +34,7 @@
     <div id="header">
         Landing Page
         <div>
-            seguí conectado
+            <span>seguí conectado</span>
             <i class="fab fa-facebook"></i>
         </div>
     </div>
@@ -59,76 +72,78 @@
     </div>
     <div id="contenido">
         <p class="titulo">Últimos Artículos</p>
-        <div class="tarjeta tarjetaImpar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
-                </p>
+        <div class="cajaTarjetas">
+            <div class="tarjeta tarjetaImpar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta tarjetaPar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
-                </p>
+            <div class="tarjeta tarjetaPar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta tarjetaImpar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
-                </p>
+            <div class="tarjeta tarjetaImpar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta tarjetaPar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
-                </p>
+            <div class="tarjeta tarjetaPar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta tarjetaImpar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
-                </p>
+            <div class="tarjeta tarjetaImpar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta tarjetaPar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
-                </p>
+            <div class="tarjeta tarjetaPar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta tarjetaImpar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
-                </p>
+            <div class="tarjeta tarjetaImpar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat? Delectus tempore cupiditate beatae nihil totam perspiciatis maxime dolorum neque velit.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta tarjetaPar">
-            <div></div>
-            <div>
-                <h3>Lorem Ipsum</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
-                </p>
+            <div class="tarjeta tarjetaPar">
+                <div></div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error ut earum, veniam pariatur reiciendis aliquid eveniet vitae placeat?
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -138,26 +153,31 @@
         <form action="">
             <div class="cajaInput">
                 <div class="input">
+                    <span></span>
                     <input id="nombre" type="text" placeholder="Nombre"><br>
                     <small></small>
                 </div>
                 <div class="input">
+                    <span></span>
                     <input id="apellido" type="text" placeholder="Apellido"><br>
                     <small></small>
                 </div>
             </div>
             <div class="input" style="width:100%;display:block;">
+                <span></span>
                 <input id="email" type="text" placeholder="e-Mail"><br>
                 <small></small>
             </div>
             <div class="cajaInput">
                 <div class="input">
+                    <span></span>
                     <select id="departamentos">
                         <option value="">Departamento</option>
                     </select>
                     <small></small>
                 </div>
                 <div class="input">
+                    <span></span>
                     <select id="localidades">
                         <option value="">Localidad</option>
                     </select>
@@ -166,15 +186,19 @@
             </div>
             <div class="cajaInput">
                 <div class="input">
+                    <span></span>
                     <input id="documento" type="text" placeholder="C.I"><br>
                     <small></small>
                 </div>
-                <div class="input">
+                <div class="input cajaAcepto">
                 <div style="display:flex;flex-direction:row;align-items:center;">
-                    <div style="width:50px;display:inline-block;">
+                    <div>
                         <input id="acepto" type="checkbox">
                     </div>
-                    Acepto las condiciones
+                    &nbsp;&nbsp;&nbsp;
+                    <div>
+                        Acepto las bases y condiciones
+                    </div>
                 </div>
                 <small></small>
                 </div>
@@ -183,6 +207,6 @@
             <center><input id="btnSubmit" type="submit" value="ENVIAR"></center>
         </form>
     </div>
-    <script src="./assets/js/formulario.js"></script>
+    <script src="./assets/js/logica.js"></script>
 </body>
 </html>

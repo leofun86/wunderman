@@ -1,4 +1,15 @@
-// CARGA DE DEPARTAMENTOS
+/*
+    ====         =========     =======          ========    ===   ===    ===    ===    =========    =========
+    ====         =========    =========         ========    ===   ===    =====  ===    =========    =========
+    ====         ===          ===   ===         ===         ===   ===    ==========    ===          ===
+    ====         =========    ===   ===         ========    ===   ===    ===  =====    =========    =========
+    ====         =========    ===   ===         ========    ===   ===    ===    ===    =========    =========
+    ====         ===          ===   ===         ===         ===   ===    ===    ===    ===                ===
+    ==========   =========    =========         ===         =========    ===    ===    =========    =========
+    ==========   =========     =======     =    ===         =========    ===    ===    =========    =========
+
+    Prueba Wunderman 2020
+*/
 const dptosLocs = {
 	"Artigas":["Artigas","Bella Unión"],
 	"Canelones":["Canelones","Santa Lucía"],
@@ -7,7 +18,6 @@ const dptosLocs = {
 };
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    cargaSlide();
     cargaDeptosLocs();
 });
 
@@ -35,11 +45,3 @@ function cargaDeptosLocs() {
     });
 }
 
-function cargaSlide() {
-    $(document).ready(function(){
-        $('.slideshow').slick({
-            accessibility:true,
-            arrows:true
-        });
-    });
-}

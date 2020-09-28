@@ -1,14 +1,14 @@
 /*
-====         =========    =========
-====         =========    =========
-====         ===          ===   ===
-====         =========    ===   ===
-====         =========    ===   ===
-====         ===          ===   ===
-==========   =========    =========
-==========   =========    =========
+    ====         =========     =======          ========    ===   ===    ===    ===    =========    =========
+    ====         =========    =========         ========    ===   ===    =====  ===    =========    =========
+    ====         ===          ===   ===         ===         ===   ===    ==========    ===          ===
+    ====         =========    ===   ===         ========    ===   ===    ===  =====    =========    =========
+    ====         =========    ===   ===         ========    ===   ===    ===    ===    =========    =========
+    ====         ===          ===   ===         ===         ===   ===    ===    ===    ===                ===
+    ==========   =========    =========         ===         =========    ===    ===    =========    =========
+    ==========   =========     =======     =    ===         =========    ===    ===    =========    =========
 
-Prueba Wunderman 2020
+    Prueba Wunderman 2020
 */
 
 /* BASE */
@@ -44,15 +44,6 @@ html, body {
 }
 .slide img {
     width:100%;
-}
-.slide1 {
-    background:red;
-}
-.slide2 {
-    background:green;
-}
-.slide3 {
-    background:orange;
 }
 .slick-prev, .slick-next {
     position:absolute!important;
@@ -103,10 +94,14 @@ html, body {
     margin-bottom:-80px;
 }
 #contenido > p {
+    text-align: left;
     font-size:3vw;
     font-weight: lighter;
     position:relative;
     left:15px;
+}
+#contenido .cajaTarjeta {
+    text-align: center;
 }
 .tarjeta {
     width:22%;
@@ -142,6 +137,10 @@ html, body {
 }
 #formulario hr {
     border:0.2px solid #999!important;
+}
+#formulario span {
+    color:#999;
+    font-size:1.3vw;
 }
 #formulario form {
     margin-top:30px!important;
@@ -179,15 +178,18 @@ html, body {
 #formulario small {
     color:red;
 }
-select::-ms-expand {
-    display:none!important
-}
 #localidades::before {
     content: 'holaMundo';
     border:none!important;
     background:green;
 }
-#acepto { scale:1.2; }
+#cajaAcepto {
+    width:auto;
+    display:inline-block;
+    margin-right:1vw;
+}
+.cajaAcepto { border:none!important; }
+.cajaAcepto input { scale:1.2; }
 #btnSubmit {
     border:none;
     background:rgb(31, 162, 172);
@@ -198,4 +200,75 @@ select::-ms-expand {
     border-radius: 5px;
     font-size:1.5vw;
     letter-spacing: 8px;
+}
+
+@media screen and (max-width:900px) {
+    #header span {
+        display:none;
+    }
+    .tarjeta {
+        width:100%;
+    }
+    .tarjetaPar {
+        top:0px;
+    }
+    #contenido {
+        top:-30px;
+    }
+    #contenido > p, #formulario > p {
+        font-size:10vw;
+        margin-bottom:0px;
+        text-align: center;
+        left:0px;
+    }
+    .infoSlider {
+        top:2vw;
+        margin-left:6vw;
+    }
+    .infoSlider h1 {
+        text-align: left;
+        font-size:2vw;
+        margin-bottom:0vw;
+
+    }
+    .infoSlider h1 span {
+        font-size:15vw;
+    }
+    .infoSlider button {
+        border:none;
+        background:rgb(31, 162, 172);
+        padding:2vw 8vw;
+        position:relative;
+        top:2vw;
+        font-size:2vw;
+        letter-spacing: 1vw;
+    }
+    .slick-prev, .slick-next {
+        display:none!important;
+    }
+    #formulario form {
+        width:88%;
+    }
+    #formulario span {
+        font-size:2.3vw;
+    }
+    #formulario .cajaInput {
+        display:block;
+    }
+    #formulario .cajaInput div {
+        margin:5px 0px!important;
+    }
+    #formulario .input {
+        width:100%!important;
+    }
+    #formulario form > div {
+        margin:2px 0px!important;
+    }
+    .cajaAcepto > div {
+        width:90%;
+        font-size:5vw!important;
+    }
+    .cajaAcepto input {
+        scale:2;
+    }
 }
