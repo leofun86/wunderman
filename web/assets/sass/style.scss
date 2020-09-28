@@ -14,6 +14,7 @@
 /* BASE */
 html, body {
     padding:0px; margin:0px;
+    padding:0px!important;width:100%;
     font-family:arial;
 }
 
@@ -88,7 +89,7 @@ html, body {
 
 /* CONTENIDO */
 #contenido {
-    padding:5px 20px;
+    padding:1px 20px;
     position:relative;
     bottom:100px;
     margin-bottom:-80px;
@@ -103,10 +104,13 @@ html, body {
 #contenido .cajaTarjeta {
     text-align: center;
 }
+.cajaTarjetas {
+    text-align: center;
+}
 .tarjeta {
     width:22%;
     height:450px;
-    margin:10px 1vw;
+    margin:1vw 1vw;
     border:1px solid #ddd;
     border-radius: 10px;
     display:inline-block;
@@ -208,6 +212,7 @@ html, body {
     }
     .tarjeta {
         width:100%;
+        margin:1vw 0vw;
     }
     .tarjetaPar {
         top:0px;
